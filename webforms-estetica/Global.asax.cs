@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Optimization;
@@ -16,6 +17,21 @@ namespace webforms_estetica
             // Código que se ejecuta al iniciar la aplicación
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        void Session_Start(object sender, EventArgs e)
+        {
+            Session["cnnString"] = @"Data Source=localhost;
+            Initial Catalog=Estetica;
+            Persist Security Info=True;
+            User ID=userPruebas;
+            Password=admin123";
+
+            Session["dSet"] = new DataSet();
+            Session["UserName"] = string.Empty;
+            Session["UserID"] = 0;
+            Session["Role"] = string.Empty;
+
         }
     }
 }
