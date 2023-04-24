@@ -1,0 +1,560 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --blue-menu: #00b4d8;
+    --gray-light: #eaeaea;
+    --white: #ffff;
+    --black : #000;
+}
+
+body {
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff;
+}
+/*========================== MENU ====================*/ 
+nav,
+.menu div {
+    background: var(--blue-menu) ;
+    font-weight: bold;
+}
+
+.menu-links a {
+    font-size: 1.12em;
+    color: var(--white);
+    margin: 0 20px;
+    font-weight: 300;
+    padding-bottom: 9px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-links a:hover {
+    border-bottom: 2px solid var(--white);
+    font-size: 1.14em;
+}
+
+.menu-login ul {
+    background: var(--blue-menu);
+}
+
+    .menu-login ul li a {
+        font-size: 1.12em;
+        color: var(--white);
+        font-weight: 300;
+    }
+.menu-login .dropdown li,
+.menu-login .dropdown button{
+    color: var(--white);
+}
+
+.menu-login .dropdown li a:focus{
+    opacity: .7;
+    background: var(--white);
+    color: var(--black);
+}
+/*========================== LOGIN ====================*/
+.modal,
+.modal-content,
+.modal-body{
+    border: 0;
+    border-radius:0;
+}
+.login-modal{
+    text-align : center;
+    
+}
+.modal input{
+    margin : 0;
+}
+
+
+
+.login-modal .nav-tabs .nav-link{
+    background : var(--white);
+    border-radius: 0;
+    width: 100%;
+    color : var(--black);
+}
+    .login-modal .nav-tabs .nav-link.active {
+        background: var(--blue-menu);
+        color: var(--white);
+
+    }
+
+.login-modal .nav-tabs .nav-item{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.login-modal .nav-tabs{
+    border-bottom: none;
+}
+.img-login {
+    margin-bottom: 1rem;
+}
+.img-login i{
+    font-size:7rem;
+    padding: 20px 24px;
+    border: 3px solid var(--black);
+    border-radius: 50%;
+}
+.header-login h3 {
+    letter-spacing: 2px;
+    border-bottom : 5px solid var(--blue-menu);
+}
+
+.form-login input[type="email"],
+.form-login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0;
+    transition: .2s border-bottom;
+    min-width: 100%;
+    width: 100%;
+}
+    .form-login input[type="email"]:focus,
+    .form-login input[type="password"]:focus {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 3px solid var(--blue-menu);
+    }
+
+        .header-register h3 {
+            letter-spacing: 2px;
+            border-bottom: 5px solid var(--blue-menu);
+        }
+.form-login label{
+    font-size: 1.124rem;
+}
+
+.forgot a{
+    color: var(--blue-menu);
+}
+    .forgot a:hover {
+        opacity: .5;
+        color: var(--blue-menu);
+    }
+
+.login-submit button {
+    background: var(--blue-menu);
+}
+.login-submit button:hover {
+    opacity: .5;
+    background: var(--blue-menu);
+    color: var(--white);
+    
+}
+.login-google i {
+    font-size: 2rem;
+    transition: .5s font-size;
+    color: var(--blue-menu);
+}
+    .login-google i:hover {
+        font-size: 2.5rem;
+        color: var(--blue-menu);
+    }
+
+.form-check-input:checked{
+    background: var(--blue-menu);
+    border-color: var(--blue-menu);
+}
+
+.form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label {
+    color: var(--black);
+}
+
+.form-check-label {
+    color: var(--black);
+}
+
+.form-check-input, .form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked, .form-check-input.is-valid, .was-validated .form-check-input:valid, .form-check-input:checked {
+    border-color: var(--blue-menu);
+}
+
+    .form-check-input.checked, .form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked, .form-check-input:checked {
+        background-color: var(--blue-menu);
+    }
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: var(--black);
+}
+    .text-google p{
+    font-size: 1.125rem;
+}
+
+    form .col-md-12{
+        width: 100%;
+    }
+
+.form-register div {
+    text-align: left;
+
+}
+
+
+.form-register input[type="text"],
+.form-register input[type="email"],
+.form-register input[type="password"] {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0;
+    transition: .2s border-bottom;
+    min-width: 100%;
+    width: 100%;
+}
+
+.label-terminos{
+    width: 100%;
+    min-width:100%;
+}
+
+    .form-register input[type="text"]:focus,
+    .form-register input[type="email"]:focus,
+    .form-register input[type="password"]:focus {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 3px solid var(--blue-menu);
+    }
+
+.form-register label {
+    font-size: 1.124rem;
+}
+
+.register-submit button {
+    background: var(--blue-menu);
+}
+
+    .register-submit button:hover {
+        opacity: .5;
+        background: var(--blue-menu);
+        color: var(--white);
+    }
+.check-terminos{
+    width: 14px;
+    height : 16px;
+    min-width: 14px;
+    min-height: 16px;
+}
+/*========================== SERVICIOS ====================*/
+.servicios {
+    background: url('../Images/fondo-servicios.jpg') var(--gray-light);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+    font-family: 'Courgette', cursive;
+}
+
+.servicios h2{
+    color: var(--white);
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 2px;
+
+}
+
+    .servicios h4 {
+        color: var(--white);
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+    .servicios p {
+        color: var(--white);
+        font-size: .80em;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+   
+.servicio {
+    opacity: .5;
+}
+
+.servicio:hover{
+    opacity: 1;
+}
+
+/*========================== HORARIO ====================*/ 
+.contenedor-horario,
+.contenedor-horario2 {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.contenedor-horario2{
+    margin-left: 0px;
+}
+
+.google-map{
+    width:100%;
+}
+
+.google-map iframe{
+    width:100%;
+}
+
+/*========================== CAROUSEL ====================*/ 
+
+.body-carrusel {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+}
+
+.container  .swiper{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--gray-light);
+}
+.slide-container {
+    margin: 0;
+    overflow: hidden;
+}
+.card {
+    max-width: calc(100%/3);
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+    .card .image-box {
+        height: 80vh;
+        
+    }
+    .card .image-box img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        background-size:cover;
+    }
+
+.swiper-navBtn {
+    
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    background: none;
+    border-radius: 50%;
+    font-size: 8px;
+
+}
+
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        font-size: 8px;
+        color: var(--blue-menu);
+        opacity: .6;
+    }
+
+
+.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--black) !important;
+    color: var(--black);
+}
+
+    @media screen and (max-width: 768px) {
+        .swiper-navBtn {
+            display: none;
+        }
+    }
+
+/*========================== TITULO CITA ====================*/
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--black);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+    .subtitulo span {
+        background: #ffff;
+        padding: 0 15px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .subtitulo::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        background: var(--black);
+        position: relative;
+        top: -29px;
+        z-index: 1;
+    }
+
+.form-file {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-file input[type="file"]{
+    display:none;
+}
+
+.form-file__result {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: var(--white);
+    border: 2px solid var(--blue-menu);;
+    transition: background-color 0.3s linear;
+    z-index: 10;
+}
+
+    .form-file__result::after {
+        content: 'Clic para elegir imagen.';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        color: #609dd6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .form-file__result:active{
+            content: '';
+        }
+        .form-file__result img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 50;
+    }
+
+.form-file__result--active {
+    background-color: rgba(82, 81, 79, 0.314);
+}
+
+.form-estetica input[type="text"],
+.form-estetica input[type="time"],
+.form-estetica input[type="date"] {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0;
+    transition: .2s border-bottom;
+    min-width: 100%;
+    width: 100%;
+}
+    .form-estetica input[type="text"]:focus,
+    .form-estetica input[type="time"]:focus,
+    .form-estetica input[type="date"]:focus {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 3px solid var(--blue-menu);
+    }
+
+.form-estetica input[type="submit"]{
+    align-content:center;
+}
+
+.form-guarderia input[type="text"],
+.form-guarderia input[type="time"],
+.form-guarderia input[type="date"] {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0;
+    transition: .2s border-bottom;
+    min-width: 100%;
+    width: 100%;
+}
+
+    .form-guarderia input[type="text"]:focus,
+    .form-guarderia input[type="time"]:focus,
+    .form-guarderia input[type="date"]:focus {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 3px solid var(--blue-menu);
+    }
+
+.form-guarderia input[type="submit"] {
+    align-content: center;
+}
+
+.check i {
+    border: 5px solid #77d161;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    color: #77d161;
+}
+
+.xmark p {
+    border: 5px solid #d42b2b;
+    border-radius: 50%;
+    padding: 0;
+    margin:0;
+}
+
+.xmark p i {
+    transform: rotate(45deg);
+    font-size: 40px;
+    padding: 10px;
+    color: #d42b2b;
+}
