@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using webforms_estetica.Classes;
 
 namespace webforms_estetica.Views
 {
@@ -11,7 +12,13 @@ namespace webforms_estetica.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Query dataManager = new Query();
+            string query = "Select * from corte";
 
+            if(Globals.FoundTable != null)
+            {
+
+            }
         }
     }
 }

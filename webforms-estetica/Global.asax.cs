@@ -21,13 +21,13 @@ namespace webforms_estetica
 
         void Session_Start(object sender, EventArgs e)
         {
-            Session["cnnString"] = @"Data Source=localhost;
+            Session["cnnString"] = @"Data Source=localhost\SQLEXPRESS;
             Initial Catalog=Estetica;
             Persist Security Info=True;
             User ID=userPruebas;
             Password=admin123";
 
-            Session["dSet"] = new DataSet();
+            Session["FoundTable"] = new DataTable("FoundTable");
             Session["UserName"] = string.Empty;
             Session["UserID"] = 0;
             Session["Role"] = string.Empty;

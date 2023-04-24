@@ -14,12 +14,6 @@ namespace webforms_estetica.Classes
             set { HttpContext.Current.Session["cnnString"] = value; }
         }
 
-        public static DataSet dSet
-        {
-            get { return (DataSet)HttpContext.Current.Session["dSet"]; }
-            set { HttpContext.Current.Session["dSet"] = value; }
-        }
-
         public static int UserID
         {
             get { return (int)HttpContext.Current.Session["UserID"]; }
@@ -36,6 +30,12 @@ namespace webforms_estetica.Classes
         {
             get { return (string)HttpContext.Current.Session["UserName"]; }
             set { HttpContext.Current.Session["UserName"] = value; }
+        }
+
+        public static DataTable FoundTable
+        {
+            get { return (DataTable)HttpContext.Current.Session["FoundTable"]; }
+            set { HttpContext.Current.Session["FoundTable"] = value; }
         }
     }
 }
