@@ -43,8 +43,8 @@
                     <i class="fa fa-user"></i>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                    <li><a class="dropdown-item" href="Login.aspx">Iniciar sesión</a></li>
+                    <li><a class="dropdown-item" href="Register.aspx">Registrarse</a></li>
                   </ul>
                 </div>
             
