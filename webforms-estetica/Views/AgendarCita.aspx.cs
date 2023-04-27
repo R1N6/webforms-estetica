@@ -38,8 +38,8 @@ namespace webforms_estetica.Views
         protected void BtnAgendarCita_Click(object sender, EventArgs e)
         {
             string fecha = Convert.ToDateTime(txtDate.Text).ToString("yyyy-MM-dd");
-            string qInsertCita = @"INSERT INTO Corte (NombreMascota, Servicio, Fecha, FK_Cliente, Horario) 
-                VALUES (@nom, 'Corte', @fecha, @id_cliente, @id_horario)";
+            string qInsertCita = @"INSERT INTO Corte (NombreMascota, Fecha, FK_Cliente, Horario, Estado) 
+                VALUES (@nom, @fecha, @id_cliente, @id_horario, 'Pendiente')";
 
             SqlConnection conn = new SqlConnection(Globals.cnnString);
             try

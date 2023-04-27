@@ -203,6 +203,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\CitasAgendadas.aspx" />
     <Content Include="Views\Cliente.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -228,6 +229,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AtenderCitas.aspx.cs">
+      <DependentUpon>AtenderCitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AtenderCitas.aspx.designer.cs">
+      <DependentUpon>AtenderCitas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\CitasAgendadas.aspx.cs">
       <DependentUpon>CitasAgendadas.aspx</DependentUpon>
