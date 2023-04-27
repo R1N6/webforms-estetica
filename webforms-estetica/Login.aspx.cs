@@ -27,7 +27,11 @@ namespace webforms_estetica.Views
             q.FetchData(qLogIn);
 
             if (Globals.FoundTable.Rows.Count < 1)
+            {
+                promptMessage.Text = "Error, el usuario no está registrado en la aplicación";
                 return;
+            }
+                
             string dePass = Globals.FoundTable.Rows[0]["Contrasena"].ToString();
             dePass = Encrypter.Decrypt(dePass);
 

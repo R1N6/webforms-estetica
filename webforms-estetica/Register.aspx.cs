@@ -34,7 +34,7 @@ namespace webforms_estetica
                 insertCMD.Parameters.AddWithValue("@name", regName.Text);
                 insertCMD.Parameters.AddWithValue("@lName", regLastName.Text);
                 insertCMD.Parameters.AddWithValue("@email", regEmail.Text);
-                insertCMD.Parameters.AddWithValue("@pass", regPass.Text);
+                insertCMD.Parameters.AddWithValue("@pass", Encrypter.Encrypt(regPass.Text));
                 insertCMD.Parameters.AddWithValue("@role", "Cliente");
 
                 try

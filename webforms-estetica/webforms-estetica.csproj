@@ -203,6 +203,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Views\CitasAgendadas.aspx" />
     <Content Include="Views\Cliente.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\AgendarCita.aspx" />
@@ -210,7 +211,6 @@
     <Content Include="Login.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Views\Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -229,19 +229,19 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\CitasAgendadas.aspx.cs">
+      <DependentUpon>CitasAgendadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CitasAgendadas.aspx.designer.cs">
+      <DependentUpon>CitasAgendadas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cliente.Master.cs">
       <DependentUpon>Cliente.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Cliente.Master.designer.cs">
       <DependentUpon>Cliente.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
