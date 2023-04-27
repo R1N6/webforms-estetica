@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using webforms_estetica.Classes;
 
 namespace webforms_estetica
 {
@@ -12,6 +14,51 @@ namespace webforms_estetica
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            string qInsertCustomer = "INSERT INTO Usuario VALUES (@name, @lName, @email, @pass, @role)";
+
+            SqlConnection conn = new SqlConnection(Globals.cnnString);
+            try
+            {
+                conn.Open();
+                SqlTransaction trans41 = conn.BeginTransaction();
+
+                SqlCommand insertCMD = new SqlCommand(qInsertCustomer, conn)
+                {
+                    Transaction = trans41
+                };
+
+                insertCMD.Parameters.AddWithValue("@name", regName.Text);
+                insertCMD.Parameters.AddWithValue("@lName", regLastName.Text);
+                insertCMD.Parameters.AddWithValue("@email", regEmail.Text);
+                insertCMD.Parameters.AddWithValue("@pass", regPass.Text);
+                insertCMD.Parameters.AddWithValue("@role", "Cliente");
+
+                try
+                {
+                    insertCMD.ExecuteNonQuery();
+                    trans41.Commit();
+                }
+                catch (Exception ex)
+                {
+                    trans41.Rollback();
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                conn.Dispose();
+            }
+
+            
         }
     }
 }

@@ -215,6 +215,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\Encrypter.cs" />
     <Compile Include="Classes\Globals.cs" />
     <Compile Include="Classes\Query.cs" />
     <Compile Include="Global.asax.cs">

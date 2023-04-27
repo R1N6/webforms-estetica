@@ -33,7 +33,7 @@ namespace webforms_estetica
 
         protected void BtnLogOut_Click(object sender, EventArgs e)
         {
-
+            LogOut();
         }
     }
 }
