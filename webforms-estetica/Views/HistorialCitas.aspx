@@ -29,4 +29,11 @@
             </div>
         </ItemTemplate>
     </asp:Repeater>
+    <div class="row mt-3">
+        <div class="col">
+            <h2 class="d-flex justify-content-center">
+                <asp:Literal runat="server" ID="promptMessage"/>
+            </h2>
+        </div>
+    </div>
 </asp:Content>

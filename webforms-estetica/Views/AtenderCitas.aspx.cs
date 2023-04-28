@@ -34,7 +34,11 @@ namespace webforms_estetica.Views
             q.FetchData(qSelectCitas);
 
             if (Globals.FoundTable == null || Globals.FoundTable.Rows.Count < 1)
+            {
+                promptMessage.Text = "No hay citas agendadas para el día de hoy :(";
                 return;
+            }
+                
 
             rptCitas.DataSource = Globals.FoundTable;
             rptCitas.DataBind();

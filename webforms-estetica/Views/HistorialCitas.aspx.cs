@@ -21,7 +21,7 @@ namespace webforms_estetica.Views
         {
             string qSelectCitas = $@"SELECT 
                 NombreMascota, 
-                CONVERT(VARCHAR(10), Fecha, 126) AS FechaCorte, 
+                CONVERT(VARCHAR(10), Fecha, 103)  AS FechaCorte, 
                 co.ID AS IdCorte, 
                 co.Estado,
                 CASE
@@ -37,9 +37,13 @@ namespace webforms_estetica.Views
             q.FetchData(qSelectCitas);
 
             if (Globals.FoundTable == null || Globals.FoundTable.Rows.Count < 1)
+            {
+                promptMessage.Text = "No has agendado ninguna cita hasta ahora :(";
                 return;
+            }
+                
 
-            DataTable dtCitas = Globals.FoundTable;
+            DataTable dtCitas = Globals.FoundTable.Copy();
             rptHistorial.DataSource = dtCitas;
             rptHistorial.DataBind();
 

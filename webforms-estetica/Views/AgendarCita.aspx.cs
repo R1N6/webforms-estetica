@@ -75,7 +75,7 @@ namespace webforms_estetica.Views
             { 
                 conn.Close();
                 conn.Dispose();
-                Response.Redirect("~/Views/CitasAgendadas.aspx", true);
+                Response.Redirect("~/Views/HistorialCitas.aspx", true);
             }
         }
     }

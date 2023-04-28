@@ -7,12 +7,12 @@
                 Display="Dynamic" CssClass="text-danger col-12"/>
 
             <asp:Label runat="server" AssociatedControlID="txtDate" CssClass="form-label form-label-lg">Fecha:</asp:Label>
-            <asp:TextBox runat="server" ID="txtDate" CssClass="form-control form-control-lg" TextMode="Date" /> 
+            <asp:TextBox runat="server" ID="txtDate" CssClass="form-control form-control-lg" TextMode="Date" AutoPostBack="true"/> 
             <asp:RequiredFieldValidator runat="server" ControlToValidate="txtDate" ValidationGroup="valCitas" ErrorMessage="Este campo es requerido"
                 Display="Dynamic" CssClass="text-danger col-12" />
 
             <asp:Label runat="server" AssociatedControlID="ddlHorarios" CssClass="form-label form-label-lg">Horarios disponibles:</asp:Label>
-            <asp:DropDownList runat="server" ID="ddlHorarios" CssClass="form-select form-select-lg" AutoPostBack="true"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlHorarios" CssClass="form-select form-select-lg"></asp:DropDownList>
 
             <asp:Button runat="server" ID="BtnAgendarCita" OnClick="BtnAgendarCita_Click" CssClass="btn btn-primary mt-3" Text="Agendar cita"
                 CausesValidation="true" ValidationGroup="valCitas"/>

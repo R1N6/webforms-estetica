@@ -22,7 +22,7 @@ namespace webforms_estetica.Views
 
             string idCorte = Session["ID_Corte"].ToString();
             string qInsertStatus = @"INSERT INTO Estatus (FK_Corte, Estatus) VALUES (@idCorte, @est)";
-            string qUpdateCorte = @"UPDATE Corte SET Estado = 'Completado' WHERE ID = @idCorte";
+            string qUpdateCorte = @"UPDATE Corte SET Estado = 'Completado', SET IDTrabajador = @idEmpleado WHERE ID = @idCorte";
 
             SqlConnection conn = new SqlConnection(Globals.cnnString);
             try
@@ -69,6 +69,7 @@ namespace webforms_estetica.Views
                     }
 
                     insertCMD.CommandText = qUpdateCorte;
+                    insertCMD.Parameters.AddWithValue("@idEmpleado", Globals.UserID);
                     insertCMD.Parameters.AddWithValue("@idCorte", idCorte);
                     insertCMD.ExecuteNonQuery();
 
