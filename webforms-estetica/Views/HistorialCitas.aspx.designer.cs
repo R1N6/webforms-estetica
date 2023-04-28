@@ -11,7 +11,16 @@ namespace webforms_estetica.Views
 {
 
 
-    public partial class CitasAgendadas
+    public partial class HistorialCitas
     {
+
+        /// <summary>
+        /// Control rptHistorial.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptHistorial;
     }
 }
