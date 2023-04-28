@@ -41,10 +41,12 @@ namespace webforms_estetica
                 {
                     insertCMD.ExecuteNonQuery();
                     trans41.Commit();
+                    promptMessage.Text = "Usuario registrado exitosamente :D";
                 }
                 catch (Exception ex)
                 {
                     trans41.Rollback();
+                    promptMessage.Text = "Ocurrió un error al realizar el registro :(";
                     Console.WriteLine(ex.Message);
                 }
             }
