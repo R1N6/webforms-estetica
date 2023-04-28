@@ -28,7 +28,7 @@ namespace webforms_estetica.Views
                 JOIN Usuario AS us ON us.ID = co.FK_Cliente 
                 JOIN Horarios AS ho ON ho.ID_horario = co.Horario
                 WHERE co.Estado = 'Pendiente'
-                AND Fecha = GETDATE()";
+                AND Fecha = CONVERT(VARCHAR(10), GETDATE(), 126)";
             Query q = new Query();
 
             q.FetchData(qSelectCitas);
