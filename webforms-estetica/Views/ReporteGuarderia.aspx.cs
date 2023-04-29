@@ -20,6 +20,28 @@ namespace webforms_estetica.Views
 
         }
 
+        protected bool CheckReportExistence()
+        {
+            idGuard = Session["ID_guard"].ToString();
+            string fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
+            string qGetReportes = $@"SELECT Fecha_reporte 
+            FROM Reporte_guarderia
+            WHERE FK_Guarderia = {idGuard}
+            AND Fecha_reporte = '{fechaHoy}'";
+
+            Query q = new Query();
+            q.FetchData(qGetReportes);
+
+            if (Globals.FoundTable.Rows.Count > 0)
+            {
+                promptMessage.Text = "Ya se llenó un reporte de estancia por el día de hoy";
+                return true;
+            }
+             
+            else
+                return false;
+        }
+
         protected void ManageControls()
         {
             idGuard = Session["ID_guard"].ToString();
@@ -44,13 +66,19 @@ namespace webforms_estetica.Views
             litStartDate.Text = row["Fecha_inicio"].ToString();
             litEndDate.Text = row["Fecha_fin"].ToString();
 
+            if (CheckReportExistence())
+                return;
+
             if (fechaHoy.Equals(litEndDate.Text))
             {
                 divFinish.Visible = true;
-                divNotes.Visible = false;
             }
             else
+            {
                 divOnCourse.Visible = true;
+                divNotes.Visible = true;
+            }
+                
 
         }
 
@@ -141,7 +169,7 @@ namespace webforms_estetica.Views
             {
                 conn.Close();
                 conn.Dispose();
-                Response.Redirect("HistorialGuarderia.aspx", true);
+                Response.Redirect("AtenderGuarderia.aspx", true);
             }
         }
     }

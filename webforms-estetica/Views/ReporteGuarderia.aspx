@@ -9,7 +9,7 @@
 
     
         
-    <div class="row text-center" runat="server" id="divNotes">
+    <div class="row text-center" runat="server" id="divNotes" visible="false">
         <div class="input-group justify-content-center">
             <span class="input-group-text">Notas:</span>
             <asp:TextBox runat="server" ID="txtNotes" TextMode="MultiLine"
@@ -33,7 +33,13 @@
         CausesValidation="true" ValidationGroup="valGuard"/>
     </div>
     
-    
+     <div class="row mt-3">
+        <div class="col">
+            <h2 class="d-flex justify-content-center">
+                <asp:Literal runat="server" ID="promptMessage"/>
+            </h2>
+        </div>
+    </div>
 
 
 </asp:Content>
