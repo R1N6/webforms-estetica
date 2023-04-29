@@ -214,6 +214,7 @@
     <Content Include="LandingPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Views\HistorialGuarderia.aspx" />
+    <Content Include="Views\RecibirGuarderia.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -317,6 +318,13 @@
     </Compile>
     <Compile Include="Views\HistorialGuarderia.aspx.designer.cs">
       <DependentUpon>HistorialGuarderia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecibirGuarderia.aspx.cs">
+      <DependentUpon>RecibirGuarderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RecibirGuarderia.aspx.designer.cs">
+      <DependentUpon>RecibirGuarderia.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
