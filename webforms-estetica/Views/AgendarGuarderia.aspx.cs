@@ -67,6 +67,7 @@ namespace webforms_estetica.Views
                     insertCMD.Parameters.Clear();
 
                     trans41.Commit();
+                    Response.Redirect("HistorialGuarderia.aspx", false);
                 }
                 catch(Exception ex)
                 {

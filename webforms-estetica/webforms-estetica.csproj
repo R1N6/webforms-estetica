@@ -206,12 +206,14 @@
     <Content Include="Views\ActualizarCita.aspx" />
     <Content Include="Views\AgendarGuarderia.aspx" />
     <Content Include="Views\AtenderCitas.aspx" />
+    <Content Include="Views\AtenderGuarderia.aspx" />
     <Content Include="Views\HistorialCitas.aspx" />
     <Content Include="Views\Cliente.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\AgendarCita.aspx" />
     <Content Include="LandingPage.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Views\HistorialGuarderia.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -252,6 +254,13 @@
     </Compile>
     <Compile Include="Views\AtenderCitas.aspx.designer.cs">
       <DependentUpon>AtenderCitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AtenderGuarderia.aspx.cs">
+      <DependentUpon>AtenderGuarderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AtenderGuarderia.aspx.designer.cs">
+      <DependentUpon>AtenderGuarderia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\HistorialCitas.aspx.cs">
       <DependentUpon>HistorialCitas.aspx</DependentUpon>
@@ -301,6 +310,13 @@
     </Compile>
     <Compile Include="Views\Empleado.Master.designer.cs">
       <DependentUpon>Empleado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistorialGuarderia.aspx.cs">
+      <DependentUpon>HistorialGuarderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HistorialGuarderia.aspx.designer.cs">
+      <DependentUpon>HistorialGuarderia.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
