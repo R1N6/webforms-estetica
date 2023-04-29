@@ -53,7 +53,7 @@
                     <a class="nav-link" href="HistorialCitas.aspx">Ver mis citas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Solicitar guardería</a>
+                    <a class="nav-link" href="AgendarGuarderia.aspx">Solicitar guardería</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Consultar guardería</a>

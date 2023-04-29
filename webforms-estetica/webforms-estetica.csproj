@@ -204,6 +204,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Views\ActualizarCita.aspx" />
+    <Content Include="Views\AgendarGuarderia.aspx" />
     <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\HistorialCitas.aspx" />
     <Content Include="Views\Cliente.Master" />
@@ -237,6 +238,13 @@
     </Compile>
     <Compile Include="Views\ActualizarCita.aspx.designer.cs">
       <DependentUpon>ActualizarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgendarGuarderia.aspx.cs">
+      <DependentUpon>AgendarGuarderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AgendarGuarderia.aspx.designer.cs">
+      <DependentUpon>AgendarGuarderia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\AtenderCitas.aspx.cs">
       <DependentUpon>AtenderCitas.aspx</DependentUpon>
