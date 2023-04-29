@@ -207,6 +207,7 @@
     <Content Include="Views\AgendarGuarderia.aspx" />
     <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\AtenderGuarderia.aspx" />
+    <Content Include="Views\DetallesGuarderia.aspx" />
     <Content Include="Views\HistorialCitas.aspx" />
     <Content Include="Views\Cliente.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -263,6 +264,13 @@
     </Compile>
     <Compile Include="Views\AtenderGuarderia.aspx.designer.cs">
       <DependentUpon>AtenderGuarderia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetallesGuarderia.aspx.cs">
+      <DependentUpon>DetallesGuarderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DetallesGuarderia.aspx.designer.cs">
+      <DependentUpon>DetallesGuarderia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\HistorialCitas.aspx.cs">
       <DependentUpon>HistorialCitas.aspx</DependentUpon>
