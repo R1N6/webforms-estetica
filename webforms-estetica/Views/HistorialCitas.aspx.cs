@@ -21,7 +21,7 @@ namespace webforms_estetica.Views
         {
             string qSelectCitas = $@"SELECT 
                 NombreMascota, 
-                CONVERT(VARCHAR(10), Fecha, 103)  AS FechaCorte, 
+                CONVERT(VARCHAR(10), Fecha, 103)  AS FechaCorte,
                 co.ID AS IdCorte, 
                 co.Estado,
                 CASE

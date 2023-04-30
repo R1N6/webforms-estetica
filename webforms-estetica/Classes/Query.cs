@@ -24,7 +24,8 @@ namespace webforms_estetica.Classes
             }
             catch(Exception ex) 
             {
-                HttpContext.Current.Session["ErrorMessage"] = ex.Message;
+                HttpContext.Current.Session["Exception"] = ex;
+                HttpContext.Current.Response.Redirect("Error.aspx", true);
             }
             finally 
             { 

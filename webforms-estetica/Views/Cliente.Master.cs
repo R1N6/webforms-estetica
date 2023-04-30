@@ -18,7 +18,6 @@ namespace webforms_estetica
                 LogOut();
                 return;
             }
-
         }
 
         protected void LogOut()

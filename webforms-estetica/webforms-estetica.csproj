@@ -127,6 +127,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\computer.png" />
     <Content Include="Images\correo.png" />
     <Content Include="Images\direccion.png" />
     <Content Include="Images\facebook.png" />
@@ -208,6 +209,7 @@
     <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\AtenderGuarderia.aspx" />
     <Content Include="Views\DetallesGuarderia.aspx" />
+    <Content Include="Views\Error.aspx" />
     <Content Include="Views\HistorialCitas.aspx" />
     <Content Include="Views\Cliente.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -271,6 +273,13 @@
     </Compile>
     <Compile Include="Views\DetallesGuarderia.aspx.designer.cs">
       <DependentUpon>DetallesGuarderia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\HistorialCitas.aspx.cs">
       <DependentUpon>HistorialCitas.aspx</DependentUpon>

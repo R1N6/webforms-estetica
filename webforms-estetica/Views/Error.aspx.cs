@@ -9,15 +9,15 @@ using webforms_estetica.Classes;
 
 namespace webforms_estetica.Views
 {
-    public partial class Empleado : System.Web.UI.MasterPage
+    public partial class Error : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(Globals.UserName))
-            {
-                LogOut();
-                return;
-            }
+            LogOut();
+            Exception ex = (Exception)Session["Exception"];
+            typePrompt.Text =$"Tipo de error: {ex.GetType().ToString()}";
+            messagePrompt.Text = $"Mensaje de error: {ex.Message}";
+
         }
 
         protected void LogOut()
@@ -26,13 +26,7 @@ namespace webforms_estetica.Views
             Globals.UserName = string.Empty;
             Globals.Role = string.Empty;
             FormsAuthentication.SignOut();
-
-            this.Page.Response.Redirect("~/LandingPage.aspx", true);
         }
 
-        protected void BtnLogOut_Click(object sender, EventArgs e)
-        {
-            LogOut();
-        }
     }
 }
