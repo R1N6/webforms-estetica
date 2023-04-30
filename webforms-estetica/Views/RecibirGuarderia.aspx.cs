@@ -12,6 +12,7 @@ namespace webforms_estetica.Views
 {
     public partial class RecibirGuarderia : System.Web.UI.Page
     {
+        string fecha_fin = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
@@ -26,7 +27,8 @@ namespace webforms_estetica.Views
             string qGetEstancia = $@"SELECT  
             (us.Nombre + ' ' + us.Apellido) AS Nombre_cliente, 
             Nombre_mascota,
-            CONVERT(VARCHAR(10), Fecha_inicio, 103) AS Fecha_inicio
+            CONVERT(VARCHAR(10), Fecha_inicio, 103) AS Fecha_inicio,
+            CONVERT(VARCHAR(10), Fecha_fin, 103) AS Fecha_fin
             FROM Guarderia AS gu
             JOIN Usuario AS us 
             ON gu.FK_Cliente = us.ID
@@ -40,7 +42,23 @@ namespace webforms_estetica.Views
             litPetName.Text = row["Nombre_mascota"].ToString();
             litOwnerName.Text = row["Nombre_cliente"].ToString();
             litStartDate.Text = row["Fecha_inicio"].ToString();
+            fecha_fin = row["Fecha_fin"].ToString();
 
+            if(!IsTodayAllowed())
+                divBtnRecibir.Visible = false;
+        }
+
+        protected bool IsTodayAllowed()
+        {
+            DateTime fechaIni = Convert.ToDateTime(litStartDate.Text);
+            DateTime fechaFin = Convert.ToDateTime(fecha_fin);
+
+            if (DateTime.Today < fechaIni || DateTime.Today > fechaFin)
+            {
+                promptMessage.Text = "El día de hoy no está dentro de la fecha para recibir a la mascota";
+                return false;
+            }
+            return true;
         }
 
         protected void BtnRecibirMascota_Click(object sender, EventArgs e)

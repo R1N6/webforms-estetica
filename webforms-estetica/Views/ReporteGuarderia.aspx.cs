@@ -69,6 +69,9 @@ namespace webforms_estetica.Views
             if (CheckReportExistence())
                 return;
 
+            if (!IsTodayAllowed())
+                return;
+
             if (fechaHoy.Equals(litEndDate.Text))
             {
                 divFinish.Visible = true;
@@ -80,6 +83,19 @@ namespace webforms_estetica.Views
             }
                 
 
+        }
+
+        protected bool IsTodayAllowed()
+        {
+            DateTime fechaIni = Convert.ToDateTime(litStartDate.Text);
+            DateTime fechaFin = Convert.ToDateTime(litEndDate.Text);
+
+            if(DateTime.Today < fechaIni || DateTime.Today > fechaFin)
+            {
+                promptMessage.Text = "El día de hoy no está dentro de la fecha para generar reportes";
+                return false;
+            }
+            return true;
         }
 
         protected void BtnLiberarMascota_Click(object sender, EventArgs e)
