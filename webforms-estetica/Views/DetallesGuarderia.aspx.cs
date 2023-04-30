@@ -50,7 +50,7 @@ namespace webforms_estetica.Views
         {
             string idGuard = Session["ID_guard"].ToString();
             string qGetEstancias = $@"SELECT 
-            Fecha_reporte,
+            CONVERT(VARCHAR(10), Fecha_reporte, 103) AS Fecha_reporte,
             Notas,
             (us.Nombre + ' ' + us.Apellido) AS Nombre_empleado
             FROM Reporte_guarderia AS gu
