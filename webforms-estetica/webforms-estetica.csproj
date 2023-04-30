@@ -124,12 +124,14 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Login.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\correo.png" />
     <Content Include="Images\direccion.png" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\fondo-login.jpg" />
     <Content Include="Images\fondo-servicios.jpg" />
     <Content Include="Images\house-pet.png" />
     <Content Include="Images\image.png" />

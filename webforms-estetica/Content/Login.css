@@ -1,0 +1,115 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-menu: #00b4d8;
+    --gray-light: #eaeaea;
+    --white: #ffff;
+    --black: #000;
+    
+}
+html {
+    overflow: hidden;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 180, 216,0.2),rgba(0, 180, 216,0.2)),url(../Images/fondo-login.jpg);
+    backdrop-filter: blur(0.4rem);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    margin: auto;
+    background: var(--white);
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(193,193,193,0.5);
+    border-radius: 10px;
+}
+
+
+.container h1 {
+    text-align:center;
+    margin: 20px 0px;
+
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid rgba(0,180,216,0.8);
+}
+
+.container i {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--blue-menu);
+    border-radius: 0px;
+    display: block;
+    max-width: 10%;
+    width: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--black);
+}
+
+    .container .input-group .form-control {
+    min-width: 70%;
+    width: 70%;
+    margin: auto;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--black);
+    min-width: 80px;
+    outline: none;
+    border-radius: 0px;
+    font-size: 16px;
+}
+    .container .input-group .form-control:focus {
+        border: none;
+        border-bottom: 2px solid var(--black);
+        box-shadow: none;
+    }
+
+    .btn-primary {
+        background: var(--blue-menu);
+        border-radius: 0px;
+        border:none;
+        padding: 10px 25px;
+    }
+
+        .btn-primary:hover {
+            background: var(--blue-menu);
+            opacity: .5;
+        }
+.container h2,
+.container span{
+    font-size: 16px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    text-decoration:underline;
+    color: #d55050;
+    font-weight:bold;
+}
+.container a {
+    font-weight: bold;
+    max-width: 150px;
+    color: var(--blue-menu);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin: 5px;
+}
