@@ -37,7 +37,19 @@ namespace webforms_estetica.Views
 
         protected void BtnAgendarCita_Click(object sender, EventArgs e)
         {
-            string fecha = Convert.ToDateTime(txtDate.Text).ToString("yyyy-MM-dd");
+            DateTime fechaCita = Convert.ToDateTime(txtDate.Text);
+
+            if(fechaCita < DateTime.Today)
+            {
+                promptMessage.Text = "No se puede agendar una cita para antes del día de hoy";
+                return;
+            }
+            else if( (fechaCita - DateTime.Today).Days > 7 )
+            {
+                promptMessage.Text = "No se puede agendar una cita para más de una semana";
+                return;
+            }
+            string fecha = fechaCita.ToString("yyyy-MM-dd");
             string qInsertCita = @"INSERT INTO Corte (NombreMascota, Fecha, FK_Cliente, Horario, Estado) 
                 VALUES (@nom, @fecha, @id_cliente, @id_horario, 'Pendiente')";
 

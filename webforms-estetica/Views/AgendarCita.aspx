@@ -17,4 +17,12 @@
             <asp:Button runat="server" ID="BtnAgendarCita" OnClick="BtnAgendarCita_Click" CssClass="btn btn-primary mt-3" Text="Agendar cita"
                 CausesValidation="true" ValidationGroup="valCitas"/>
         </div>
+
+        <div class="row mt-3">
+        <div class="col">
+            <h2 class="d-flex justify-content-center">
+                <asp:Literal runat="server" ID="promptMessage"/>
+            </h2>
+        </div>
+    </div>
 </asp:Content>
