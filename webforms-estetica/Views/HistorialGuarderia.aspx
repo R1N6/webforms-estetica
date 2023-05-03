@@ -1,7 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Cliente.Master" AutoEventWireup="true" CodeBehind="HistorialGuarderia.aspx.cs" Inherits="webforms_estetica.Views.HistorialGuarderia" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row text-center">
-        <h2>Historial de estancias de mascota</h2>
+    
+    <div class="d-block">
+        <div class=" text-center historial-guarderia ">
+        <div class="">
+            <h2>Historial de estancias de mascota</h2>
+
+        </div>
+
     </div>
 
     <div class="list-group text-center">
@@ -16,11 +22,13 @@
         </asp:Repeater>
     </div>
 
-    <div class="row mt-3">
-        <div class="col">
-            <h2 class="d-flex justify-content-center">
+    <div class="  mt-3">
+        <div class=" no-guarderia">
+            <h2 class="">
                 <asp:Literal runat="server" ID="promptMessage"/>
             </h2>
         </div>
     </div>
+    </div>
+    
 </asp:Content>
