@@ -15,6 +15,9 @@ namespace webforms_estetica.Views
         private string idGuard = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ID_guard"] == null)
+                Response.Redirect("~/Views/AtenderGuarderia.aspx", true);
+
             if(!IsPostBack)
                 ManageControls();
 

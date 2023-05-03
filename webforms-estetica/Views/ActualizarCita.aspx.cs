@@ -13,6 +13,8 @@ namespace webforms_estetica.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ID_corte"] == null)
+                Response.Redirect("~/Views/AtenderCitas.aspx", true);
         }
 
         protected void BtnUpdateCita_Click(object sender, EventArgs e)

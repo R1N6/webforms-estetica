@@ -15,7 +15,11 @@ namespace webforms_estetica.Views
         string fecha_fin = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+
+            if (Session["ID_guard"] == null)
+                Response.Redirect("~/Views/AtenderGuarderia.aspx", true);
+
+            if (!IsPostBack)
             {
                 LoadDaycareData();
             }

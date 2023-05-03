@@ -18,7 +18,13 @@ namespace webforms_estetica.Views
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (Session["ID_guard"] == null)
+                if(Globals.Role.Equals("Admin"))
+                    Response.Redirect("~/Views/AdminGuarderia.aspx", true);
+                else if(Globals.Role.Equals("Cliente"))
+                    Response.Redirect("~/Views/HistorialGuarderia.aspx", true);
+
+            if (!IsPostBack)
             {
                 
                 LoadGenData();

@@ -13,7 +13,7 @@ namespace webforms_estetica.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(Globals.UserName))
+            if (String.IsNullOrEmpty(Globals.UserName) || !Globals.Role.Equals("Empleado"))
             {
                 LogOut();
                 return;
