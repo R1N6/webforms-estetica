@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Registrarse</title>
     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,40 +37,40 @@
                 </h1>
             </div>
             <div class="row mt-5 d-flex justify-content-center flex-nowrap">
-                <div class="col-4">
+                <div class="col-8">
                     <div class="input-group">
-                        <span class="input-group-text">Nombre</span>
-                        <asp:TextBox runat="server" ID="regName" CssClass="form-control"></asp:TextBox>
+                        <i class="fa fa-user "></i>
+                        <asp:TextBox runat="server" ID="regName" CssClass="form-control" placeholder ="Nombre"></asp:TextBox>
                     </div>
                     <asp:RequiredFieldValidator CssClass="text-danger col-12" runat="server" ControlToValidate="regName" ErrorMessage="Este campo es requerido"
                             Display="Dynamic" ValidationGroup="valReg"/>
 
                     <div class="input-group mt-3">
-                        <span class="input-group-text">Apellido</span>
-                        <asp:TextBox runat="server" ID="regLastName" CssClass="form-control"/>
+                        <i class="fa fa-user "></i>
+                        <asp:TextBox runat="server" ID="regLastName" CssClass="form-control" placeholder="Apellido"/>
                     </div>
                     <asp:RequiredFieldValidator runat="server" CssClass="text-danger col-12" ControlToValidate="regLastName" ErrorMessage="Este campo es requerido"
                             Display="Dynamic" ValidationGroup="valReg"/>
 
                     <div class="input-group mt-3">
-                        <span class="input-group-text">Correo</span>
-                        <asp:TextBox runat="server" ID="regEmail" CssClass="form-control"/>
+                        <i class=" fa fa-regular fa-envelope"></i>
+                        <asp:TextBox runat="server" ID="regEmail" CssClass="form-control" placeholder="Correo Electronico"/>
                     </div>
                     <asp:RequiredFieldValidator runat="server" CssClass="text-danger col-12" ControlToValidate="regLastName" ErrorMessage="Este campo es requerido"
                             Display="Dynamic" ValidationGroup="valReg"/>
 
                     <div class="input-group mt-3">
-                        <span class="input-group-text">Contraseña</span>
+                        <i class="fa fa-solid fa-lock"></i>
                         <asp:TextBox runat="server" ID="regPass" CssClass="form-control"
-                            TextMode="Password" />
+                            TextMode="Password" placeholder="Contraseña" />
                     </div>
                     <asp:RequiredFieldValidator runat="server" CssClass="text-danger col-12" ControlToValidate="regPass" ErrorMessage="Este campo es requerido"
                             Display="Dynamic" ValidationGroup="valReg"/>
 
                     <div class="input-group mt-3">
-                        <span class="input-group-text">Confirmar contraseña</span>
+                        <i class="fa fa-solid fa-lock"></i>
                         <asp:TextBox runat="server" ID="regPass2" CssClass="form-control"
-                            TextMode="Password" />
+                            TextMode="Password" placeholder="Confirmar contraseña" />
                     </div>
                     <asp:RequiredFieldValidator runat="server" CssClass="text-danger col-12" ControlToValidate="regPass" ErrorMessage="Este campo es requerido"
                             Display="Dynamic" ValidationGroup="valReg"/>
@@ -94,6 +95,9 @@
                         <asp:Literal runat="server" ID="promptMessage"/>
                     </h2>
                 </div>
+            </div>
+             <div class="row justify-content-end">
+                <a href="/LandingPage.aspx">Inicio</a>
             </div>
         </div>
     </form>

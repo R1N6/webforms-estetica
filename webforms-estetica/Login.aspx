@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Iniciar sesión</title>
     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,21 +32,22 @@
             </Scripts>
         </asp:ScriptManager>
         <div class="container">
+            
             <div class="row text-center">
                 <h1>
                     Iniciar sesión
                 </h1>
             </div>
             <div class="row mt-5 d-flex justify-content-center flex-nowrap">
-                <div class="col-4">
+                <div class="col-8">
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Correo</span>
-                        <asp:TextBox runat="server" ID="logUname" CssClass="form-control"></asp:TextBox>
+                        <i class=" fa fa-regular fa-envelope"></i>
+                        <asp:TextBox runat="server" ID="logUname" CssClass="form-control" placeholder="Correo Electronico"></asp:TextBox>
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Contraseña</span>
+                        <i class=" fa fa-solid fa-lock"></i>
                         <asp:TextBox runat="server" ID="logPass" CssClass="form-control"
-                            TextMode="Password"></asp:TextBox>
+                            TextMode="Password" placeholder="Contraseña"></asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -54,6 +57,7 @@
                     OnClick="btnLogin_Click" ID="btnLogin" Text="Acceder"/>
                 </div>
             </div>
+            
             <div class="row mt-3">
                 <div class="col">
                     <h2 class="d-flex justify-content-center">
@@ -61,7 +65,13 @@
                     </h2>
                 </div>
             </div>
+
+            <div class="row justify-content-end">
+                <a href="/LandingPage.aspx">Inicio</a>
+            </div>
+
         </div>
     </form>
+    
 </body>
 </html>
