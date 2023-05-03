@@ -33,7 +33,7 @@
         </ItemTemplate>
     </asp:Repeater>
     <div class="row mt-3">
-        <div class="col">
+        <div class="col no-atenderguarderia">
             <h2 class="d-flex justify-content-center">
                 <asp:Literal runat="server" ID="promptMessage"/>
             </h2>

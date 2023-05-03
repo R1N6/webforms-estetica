@@ -30,26 +30,29 @@
             </Scripts>
         </asp:ScriptManager>
 
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
-                
+        <nav class="navbar navbar-expand-lg d-flex sticky-top ">
+            <div class="container-fluid d-flex align-content-center justify-content-between">
 
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-user"></i>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="Login.aspx">Iniciar sesión</a></li>
-                    <li><a class="dropdown-item" href="Register.aspx">Registrarse</a></li>
-                  </ul>
+                <div class="empresa">
+                    <h4 class="text-white">MACA & CO</h4>
                 </div>
-            
+                <div class="menu-nav">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                        <button class="btn  dropdown-toggle dropend" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="Login.aspx">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="Register.aspx">Registrarse</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-          </div>
+
         </nav>
 
         <div class="w-100 d-flex justify-content-center align-items-center servicios mb-5  ">

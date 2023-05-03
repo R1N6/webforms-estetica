@@ -1,0 +1,143 @@
+﻿
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-menu: #00b4d8;
+    --gray-light: #eaeaea;
+    --white: #ffff;
+    --black: #000;
+    --body-black: #e8e8e8;
+}
+
+body {
+    margin-bottom: 20px;
+    font-family: 'Sriracha','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    background-image: url(../Images/cliente-1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    background: var(--blue-menu);
+}
+
+    nav ul li {
+        margin: 5px 20px;
+    }
+
+        nav ul li .nav-link {
+            color: var(--white);
+            border-bottom: 2px solid transparent;
+        }
+
+            nav ul li .nav-link:hover {
+                opacity: .8;
+                color: var(--white);
+                border-bottom: 2px solid var(--white);
+            }
+
+    nav .btn {
+        background: var(--white);
+        border: 1px solid #f6f6f6;
+        color: var(--blue-menu);
+    }
+
+        nav .btn:hover {
+            background: #bababa;
+            border: 1px solid var(--white);
+        }
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.agendar-cita {
+    background: var(--white);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    border: 2px solid rgba(255,255,255,0.5);
+    max-width:1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+    .agendar-cita .img img {
+        min-width: 100px;
+        height: 100%;
+    }
+.agendar-cita h3 {
+    margin: 15px 10px;
+    text-transform: uppercase;
+    color: var(--blue-menu);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+    .agendar-cita .form-label {
+        margin: 15px 0;
+        color: var(--black);
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .agendar-cita .form-control, .agendar-cita .form-select {
+        color: var(--black);
+        font-size: 20px;
+        background: none;
+        border: 1px solid rgba(0,0,0,.1);
+        border-bottom: 2px solid var(--gray-light);
+        border-radius: 5px;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    }
+
+.form-select i {
+    color: var(--white);
+}
+
+.agendar-cita .form-control:focus {
+    border-bottom: 2px solid var(--blue-menu);
+}
+
+.agendar-cita .form-select:focus {
+    border-bottom: 2px solid var(--blue-menu);
+}
+
+.agendar-cita .btn {
+    padding: 10px 30px;
+    margin: 30px 10px;
+    background: var(--blue-menu);
+    border: 1px solid transparent;
+    color: var(--white);
+    border-radius: 50px;
+}
+.no-historial,
+.no-guarderia h2 {
+    background: var(--white);
+    color: #636262;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px;
+    display:block;
+}
+
+.historial-guarderia h2 {
+    background: var(--white);
+    color: var(--blue-menu);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    display: block;
+    padding:20px;
+}
