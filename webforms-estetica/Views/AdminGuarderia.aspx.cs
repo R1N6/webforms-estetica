@@ -50,6 +50,7 @@ namespace webforms_estetica.Views
 
         protected void rptGuardLinks_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+            Session["AdminMode"] = true;
             Session["ID_guard"] = e.CommandArgument.ToString();
             Response.Redirect("DetallesGuarderia.aspx", true);
         }

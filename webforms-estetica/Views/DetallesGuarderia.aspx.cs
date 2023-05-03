@@ -11,10 +11,16 @@ namespace webforms_estetica.Views
 {
     public partial class DetallesGuarderia : System.Web.UI.Page
     {
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            if (Session["AdminMode"] != null)
+                this.MasterPageFile = "~/Views/Admin.Master";
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
             {
+                
                 LoadGenData();
                 BindReports();
             }
