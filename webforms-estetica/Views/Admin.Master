@@ -60,7 +60,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Administrar empleados</a>
+                    <a class="nav-link" href="AdminEmpleados.aspx">Administrar empleados</a>
                 </li>
 
                 </ul>

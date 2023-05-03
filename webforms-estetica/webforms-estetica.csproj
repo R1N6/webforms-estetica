@@ -206,6 +206,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Views\ActualizarCita.aspx" />
     <Content Include="Views\AdminCitas.aspx" />
+    <Content Include="Views\AdminEmpleados.aspx" />
     <Content Include="Views\AdminGuarderia.aspx" />
     <Content Include="Views\AdminRegEmpleado.aspx" />
     <Content Include="Views\AgendarGuarderia.aspx" />
@@ -262,6 +263,13 @@
     </Compile>
     <Compile Include="Views\AdminCitas.aspx.designer.cs">
       <DependentUpon>AdminCitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminEmpleados.aspx.cs">
+      <DependentUpon>AdminEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminEmpleados.aspx.designer.cs">
+      <DependentUpon>AdminEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\AdminGuarderia.aspx.cs">
       <DependentUpon>AdminGuarderia.aspx</DependentUpon>
