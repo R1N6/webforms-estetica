@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Cliente.Master" AutoEventWireup="true" CodeBehind="HistorialCitas.aspx.cs" Inherits="webforms_estetica.Views.HistorialCitas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
     <asp:Repeater runat="server" ID="rptHistorial" OnItemDataBound="rptHistorial_ItemDataBound">
         <ItemTemplate>
             <div class="row mt-5">
@@ -31,7 +32,7 @@
     </asp:Repeater>
     <div class="row mt-3">
         <div class="col">
-            <h2 class="d-flex justify-content-center">
+            <h2 class="d-flex justify-content-center no-historial">
                 <asp:Literal runat="server" ID="promptMessage"/>
             </h2>
         </div>
