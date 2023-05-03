@@ -205,6 +205,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Views\ActualizarCita.aspx" />
+    <Content Include="Views\AdminCitas.aspx" />
     <Content Include="Views\AgendarGuarderia.aspx" />
     <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\AtenderGuarderia.aspx" />
@@ -245,6 +246,20 @@
     </Compile>
     <Compile Include="Views\ActualizarCita.aspx.designer.cs">
       <DependentUpon>ActualizarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminCitas.aspx.cs">
+      <DependentUpon>AdminCitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminCitas.aspx.designer.cs">
+      <DependentUpon>AdminCitas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\AgendarGuarderia.aspx.cs">
       <DependentUpon>AgendarGuarderia.aspx</DependentUpon>
@@ -360,6 +375,7 @@
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
     <Content Include="Views\Empleado.Master" />
+    <Content Include="Views\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

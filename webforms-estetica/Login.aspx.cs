@@ -59,6 +59,9 @@ namespace webforms_estetica.Views
                 case "Empleado":
                     defaultPage = "~/Views/AtenderCitas.aspx";
                     break;
+                case "Admin":
+                    defaultPage = "~/Views/AdminCitas.aspx";
+                    break;
             }
 
             return defaultPage;
