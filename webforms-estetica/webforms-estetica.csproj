@@ -207,6 +207,7 @@
     <Content Include="Views\ActualizarCita.aspx" />
     <Content Include="Views\AdminCitas.aspx" />
     <Content Include="Views\AdminGuarderia.aspx" />
+    <Content Include="Views\AdminRegEmpleado.aspx" />
     <Content Include="Views\AgendarGuarderia.aspx" />
     <Content Include="Views\AtenderCitas.aspx" />
     <Content Include="Views\AtenderGuarderia.aspx" />
@@ -268,6 +269,13 @@
     </Compile>
     <Compile Include="Views\AdminGuarderia.aspx.designer.cs">
       <DependentUpon>AdminGuarderia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminRegEmpleado.aspx.cs">
+      <DependentUpon>AdminRegEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminRegEmpleado.aspx.designer.cs">
+      <DependentUpon>AdminRegEmpleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\AgendarGuarderia.aspx.cs">
       <DependentUpon>AgendarGuarderia.aspx</DependentUpon>
