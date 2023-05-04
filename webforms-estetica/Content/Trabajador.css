@@ -8,11 +8,12 @@
 
 :root {
     --blue-menu: #00b4d8;
-    --gray-light: #eaeaea;
+    --gray-light: #494c4e;
     --white: #d6d6d6;
     --black: #000;
     --body-black: #e8e8e8;
     --body-trabajador: #2b2e31;
+    --gray-n: #868686;
 }
 body {
     background: var(--body-trabajador);
@@ -21,7 +22,414 @@ body {
 .no-atendercitas h2,
 .no-atenderguarderia h2{
     text-transform: uppercase;
-    padding: 10px;
-    border: 1px solid rgba(255,255,2555,0.5);
-    border-radius: 10px;
+    color: var(--gray-light);
+
 }
+
+.atender-cita {
+    margin-top: 30px;
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.atender-cita h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-light);
+    padding: 10px 0;
+}
+.cita-estetica{
+    margin: 5px;
+}
+.cita-estetica:hover {
+    background: #3d3e40;
+}
+.cita-estetica h4
+{
+    color: var(--gray-n);
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--gray-n);
+    text-align: center;
+    margin: 0px 4px;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.cita-estetica p {
+    color: var(--white);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cita-estetica .btn{
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.actualizar-cita {
+
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+    .actualizar-cita h4 {
+        color: var(--gray-n);
+        letter-spacing: 1px;
+        border-bottom: 1px solid var(--gray-n);
+        text-align: center;
+        margin: 10px 4px;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .actualizar-cita .form-check{
+        margin: 5px;
+    }
+    .actualizar-cita .form-check .form-check-label{
+        color: var(--white);
+        letter-spacing: 1px;
+        font-size: 24px;
+    }
+    .actualizar-cita .form-check .form-check-input{
+        margin-top: 8px;
+    }
+
+    .actualizar-cita .btn{
+        padding: 5px 30px;
+        border-radius: 40px;
+        margin: 20px 0;
+        color: var(--white);
+    }
+        .actualizar-cita .btn:active {
+            background: var(--blue-menu);
+            opacity: 0.8;
+        }
+.msg-reporte h2{
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.recibir-guarderia,
+.reporte-guarderia {
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+    .recibir-guarderia h2,
+    .reporte-guarderia  h2{
+        color: var(--gray-light);
+        letter-spacing: 1px;
+        text-align: start;
+        margin: 10px 10px;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .recibir-guarderia .btn,
+    .reporte-guarderia .btn {
+        color: var(--white);
+        background: var(--blue-menu);
+        padding: 5px 30px;
+        margin: 10px 0;
+        border-radius: 40px;
+        font-size: 25px;
+    }
+        .recibir-guarderia .btn:active,
+        .reporte-guarderia .btn:active {
+            background: var(--blue-menu);
+            opacity: 0.8;
+        }
+
+    .reporte-guarderia .notas {
+        margin-top: 20px;
+        background: #252729;
+        border: 2px solid rgba(255,255,255,0.1);
+        max-height: 400px;
+        max-width: 500px;
+        color: var(--gray-n);
+    }
+        .reporte-guarderia .notas:focus {
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        /*==========ADMIN===========*/
+
+.reg-admin {
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+    max-width: 700px;
+
+}
+
+    .reg-admin h1 {
+        color: var(--gray-light);
+        letter-spacing: 1px;
+        text-align: start;
+        margin: 10px;
+        width:90%;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid var(--gray-light);
+    }
+    .reg-admin i {
+        background: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        color: var(--white);
+        border-radius: 0px;
+        display: block;
+        max-width: 10%;
+        width: 30%;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid var(--black);
+    }
+    .reg-admin .input-group{
+        width: 100%;
+        align-content: center;
+    }
+
+    .reg-admin .input-group .form-control {
+        min-width: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 2px solid var(--black);
+        min-width: 80px;
+        outline: none;
+        border-radius: 0px;
+        font-size: 16px;
+        color: var(--gray-n);
+    }
+
+    .reg-admin .input-group .form-control:focus {
+        border: none;
+        border-bottom: 2px solid var(--black);
+        box-shadow: none;
+    }
+.reg-admin .btn{
+    margin: 10px 0; 
+    background: var(--blue-menu);
+    color: var(--white);
+    border-radius: 40px;
+    padding: 10px 60px;
+}
+
+    .reg-admin .btn:active {
+        background: var(--blue-menu);
+        opacity: 0.8;
+    }
+
+.admin-empleados {
+
+
+}
+
+.admin-empleados .admin-empleados-titulo h2{
+    color: var(--gray-light);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+    .admin-empleados .table {
+        background: #262B2F;
+        border:none;
+        margin:0 5px;
+
+    }
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: var(--gray-n);
+    
+}
+.admin-empleados .table td{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+    .admin-empleados .table tr:hover {
+        background: #353a3e;
+    }
+.admin-empleados .table a{
+    color: var(--white);
+    background: var(--blue-menu);
+    text-decoration: none;
+    padding: 5px 40px;
+    border-radius: 40px;
+    font-size:16px;
+}
+
+    .admin-empleados .table a:hover {
+        color: var(--white);
+        background: var(--blue-menu);
+        opacity: .7;
+    }
+
+.admin-empleados .table input {
+    border: none;
+    background: #262B2F;
+    border-bottom: 1px solid var(--gray-light);
+    color: var(--white);
+
+    border-radius:3px;
+}
+
+.titulo-guarderia h2 {
+    color: var(--gray-light);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--gray-light);
+    margin-top:20px;
+}
+
+.admin-cita-guarderia a {
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    color:var(--gray-n);
+    letter-spacing: 1px;
+}
+    .admin-cita-guarderia a:hover {
+        background: #2e3031;
+        color: var(--gray-n);
+    }
+    .admin-cita-guarderia span {
+        padding: 5px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+.detalles {
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+
+}
+
+    .detalles .titulo-detalles {
+        background: #262B2F;
+        margin: 5px;
+        color: var(--gray-n);
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #363b3e;
+    }
+    .detalles .detalles-dueno {
+        color: var(--white);
+        text-align: start;
+        margin: 20px;
+        justify-content: center;
+        letter-spacing: 1px;
+        
+    }
+        .detalles .detalles-dueno h2 {
+            font-size: 25px;
+        }
+    .detalles .detalles-empleado {
+        background: #262B2F;
+        margin: 5px auto;
+        color: var(--gray-n);
+        padding:10px;
+        text-transform: uppercase;
+        border: 1px solid #363b3e;
+        max-width: 800px;
+
+    }
+        .detalles .detalles-empleado h4,
+        .detalles .detalles-empleado p{
+            font-size:22px;
+        }
+        .detalles .detalles-empleado .border-primary {
+            border-color: var(--gray-light);
+            z-index: 1;
+        }
+        .detalles .no-detalles-empleado h2 {
+            background: #262B2F;
+            margin: 5px;
+            color: var(--gray-n);
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid #363b3e;
+        }
+
+.admin-citas {
+    background: #252729;
+    box-shadow: 0 10px 10px rgba(79,79,79,.2);
+    border: 2px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+    
+}
+    .admin-citas .admin-citas-titulo {
+
+        margin: 5px;
+        color: var(--gray-n);
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 1px solid #363b3e;
+    }
+    .admin-citas .admin-cita {
+        background: #262B2F;
+        margin: 5px;
+        color: var(--gray-n);
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #363b3e;
+    }
+
+        .admin-citas .admin-cita h3 {
+            color: var(--gray-light);
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 10px 10px;
+            text-transform: uppercase;
+            font-size: 30px;
+            border-bottom: 1px solid var(--gray-light);
+        }
+        .admin-citas .admin-cita h4 {
+            color: var(--white);
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 10px 10px;
+            text-transform: uppercase;
+            font-size: 22px;
+
+        }
+        .admin-citas .admin-cita ul {
+            background: #262B2F;
+            margin: 5px auto;
+            color: var(--gray-n);
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+            max-width:800px;
+        }
+        .admin-citas .admin-cita li{
+            background: none;
+            border:none;
+            color: var(--white);
+            font-size: 22px;
+            letter-spacing: 1px;
+        }

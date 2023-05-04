@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin.Master" AutoEventWireup="true" CodeBehind="AdminEmpleados.aspx.cs" Inherits="webforms_estetica.Views.AdminEmpleados" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row m-3">
+    <div class="admin-empleados">
+    <div class="row m-3 admin-empleados-titulo">
         <h2>Administrar empleados</h2>
     </div>
     
@@ -27,4 +28,5 @@
             </h2>
         </div>
     </div>
+        </div>
 </asp:Content>

@@ -17,7 +17,7 @@
                 Display="Dynamic" CssClass="text-danger col-12" />
 
             <asp:Label runat="server" AssociatedControlID="ddlHorarios" CssClass="form-label form-label-lg">Horarios disponibles:</asp:Label>
-            <asp:DropDownList runat="server" ID="ddlHorarios" CssClass="form-select form-select-lg"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlHorarios" CssClass="hora"></asp:DropDownList>
 
             <asp:Button runat="server" ID="BtnAgendarCita" OnClick="BtnAgendarCita_Click" CssClass="btn btn-primary " Text="Agendar cita"
                 CausesValidation="true" ValidationGroup="valCitas" />

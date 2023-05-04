@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin.Master" AutoEventWireup="true" CodeBehind="AdminGuarderia.aspx.cs" Inherits="webforms_estetica.Views.AdminGuarderia" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row text-center">
+    <div class="row text-center titulo-guarderia">
         <h2>Historial de estancias de mascota</h2>
     </div>
 
-    <div class="list-group text-center">
+    <div class="list-group text-center admin-cita-guarderia">
         <asp:Repeater ID="rptGuardLinks" runat="server" OnItemCommand="rptGuardLinks_ItemCommand">
             <ItemTemplate>
                 <asp:LinkButton runat="server" CssClass="list-group-item list-group-item-action"

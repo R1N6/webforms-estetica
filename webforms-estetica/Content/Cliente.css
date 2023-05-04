@@ -100,6 +100,17 @@ nav {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
     }
 
+.hora {
+    color: var(--black);
+    font-size: 20px;
+    background: none;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: 2px solid var(--gray-light);
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    padding: 0px 100px;
+
+}
 .form-select i {
     color: var(--white);
 }
@@ -127,17 +138,109 @@ nav {
     border-radius: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 20px;
-    display:block;
-}
 
-.historial-guarderia h2 {
+}
+.historial-guarderia{
+    max-width:1200px;
+}
+    .historial-guarderia h2 {
+        background: var(--white);
+        color: var(--blue-menu);
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 20px;
+        margin: 0px auto;
+        width: 1200px;
+    }
+
+.cita {
     background: var(--white);
     color: var(--blue-menu);
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 10px;
-    display: block;
-    padding:20px;
+    padding-top: 30px;
+
 }
+
+    .cita h3 {
+        font-size: 20px;
+        border-bottom: 1px solid #ffc107;
+        color: #ffc107;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .cita h4 {
+        font-size: 20px;
+        color: var(--black);
+        text-align:center;
+    }
+    .cita  ul{
+        background: none;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+        .cita ul li{
+            background:none;
+            font-size: 16px;
+            color: var(--black);
+            letter-spacing: 1px;
+            border:none;
+            text-align: center;
+        }
+        .cita-guarderia {
+            border-radius: 0;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+.cita-guarderia span {
+    padding: 5px 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.detalles {
+    background: var(--white);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    border: 2px solid rgba(255,255,255,0.5);
+    max-width: 1200px;
+ 
+}
+    .detalles .titulo-detalles {
+        text-align: center;
+        background: var(--blue-menu);
+        color: var(--white);
+        border-radius: 10px;
+        padding: 5px 0;
+    }
+    .detalles h2 {
+        text-align: start;
+        margin: 5px;
+    }
+    .detalles .detalles-empleado{
+        background:var(--blue-menu);
+        margin: 50px auto;
+        padding:5px;
+        color: var(--white);
+        letter-spacing: 1px;
+        border-radius: 5px;
+        max-width: 800px;
+    }
+        .detalles .detalles-empleado h4,
+        .detalles .detalles-empleado p{
+            font-size:22px;
+        }
+        .detalles h2,
+        .detalles .no-detalles-empleado h2 {
+            font-size: 25px;
+            color: #3d3f41;
+            letter-spacing: 1px;
+        }
+    .detalles .no-detalles-empleado h2{
+        padding: 5px; 0;
+
+        border-radius: 10px;
+        margin: 5px;
+    }

@@ -2,15 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="d-block">
-        <div class=" text-center historial-guarderia ">
-        <div class="">
-            <h2>Historial de estancias de mascota</h2>
-
+        <div class=" text-center historial-guarderia">
+            <div class="row">
+                <h2 class="col-12">Historial de estancias de mascota</h2>
+            </div>
         </div>
 
-    </div>
-
-    <div class="list-group text-center">
+    <div class="row list-group text-center cita-guarderia">
         <asp:Repeater ID="rptGuardLinks" runat="server" OnItemCommand="rptGuardLinks_ItemCommand">
             <ItemTemplate>
                 <asp:LinkButton runat="server" CssClass="list-group-item list-group-item-action"
@@ -22,9 +20,9 @@
         </asp:Repeater>
     </div>
 
-    <div class="  mt-3">
+    <div class=" row mt-3">
         <div class=" no-guarderia">
-            <h2 class="">
+            <h2 class="col">
                 <asp:Literal runat="server" ID="promptMessage"/>
             </h2>
         </div>

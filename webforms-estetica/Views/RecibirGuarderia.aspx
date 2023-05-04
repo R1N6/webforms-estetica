@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Empleado.Master" AutoEventWireup="true" CodeBehind="RecibirGuarderia.aspx.cs" Inherits="webforms_estetica.Views.RecibirGuarderia" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="recibir-guarderia">
+
+    
     <div class="row text-center">
         <h2>Mascota: <asp:Literal runat="server" ID="litPetName"/></h2>
         <h2>Dueño: <asp:Literal runat="server" ID="litOwnerName"/></h2>
@@ -17,5 +20,5 @@
             </h2>
         </div>
     </div>
-    
+    </div>
 </asp:Content>
