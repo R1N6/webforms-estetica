@@ -12,7 +12,7 @@
                 Display="Dynamic" CssClass="text-danger col-12" />
 
             <asp:Label runat="server" AssociatedControlID="txtDate" CssClass="form-label form-label-lg">Fecha:</asp:Label>
-            <asp:TextBox runat="server" ID="txtDate" CssClass="form-control form-control-lg" TextMode="Date" AutoPostBack="true" />
+            <asp:TextBox runat="server" ID="txtDate" CssClass="form-control form-control-lg" TextMode="Date" AutoPostBack="true" OnTextChanged="txtDate_TextChanged"/>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="txtDate" ValidationGroup="valCitas" ErrorMessage="Este campo es requerido"
                 Display="Dynamic" CssClass="text-danger col-12" />
 

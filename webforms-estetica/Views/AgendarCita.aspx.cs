@@ -16,8 +16,8 @@ namespace webforms_estetica.Views
             if(!IsPostBack)
             {
                 txtDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
+                BindHorariosDisponibles();
             }
-            BindHorariosDisponibles();
         }
 
         protected void BindHorariosDisponibles()
@@ -42,11 +42,13 @@ namespace webforms_estetica.Views
             if(fechaCita < DateTime.Today)
             {
                 promptMessage.Text = "No se puede agendar una cita para antes del día de hoy";
+                BindHorariosDisponibles();
                 return;
             }
             else if( (fechaCita - DateTime.Today).Days > 7 )
             {
                 promptMessage.Text = "No se puede agendar una cita para más de una semana";
+                BindHorariosDisponibles();
                 return;
             }
             string fecha = fechaCita.ToString("yyyy-MM-dd");
@@ -89,6 +91,11 @@ namespace webforms_estetica.Views
                 conn.Dispose();
                 Response.Redirect("~/Views/HistorialCitas.aspx", true);
             }
+        }
+
+        protected void txtDate_TextChanged(object sender, EventArgs e)
+        {
+            BindHorariosDisponibles();
         }
     }
 }
