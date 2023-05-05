@@ -26,6 +26,11 @@ namespace webforms_estetica.Views
                 promptMessage.Text = "No puedes agendar una guardería para un día anterior a hoy";
                 return;
             }
+            else if( (dateIni - DateTime.Today).Days  > 7)
+            {
+                promptMessage.Text = "La fecha de inicio no debe de extenderse más de 7 días a partir de hoy";
+                return;
+            }
             else if((dateFin - dateIni).Days > 7)
             {
                 promptMessage.Text = "El periodo de estancia no debe de superar los 7 días";
